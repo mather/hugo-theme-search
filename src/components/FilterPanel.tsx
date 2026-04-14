@@ -1,12 +1,61 @@
 import { SortOption } from '../types/theme';
 import { isValidVersion } from '../utils/version';
 
+interface ChipGroupProps {
+  label: string;
+  items: string[];
+  selected: string[];
+  onToggle: (item: string) => void;
+  activeColor: 'blue' | 'violet';
+}
+
+function ChipGroup({ label, items, selected, onToggle, activeColor }: ChipGroupProps) {
+  if (items.length === 0) return null;
+  const activeClass =
+    activeColor === 'blue'
+      ? 'bg-blue-600 text-white border-blue-600'
+      : 'bg-violet-600 text-white border-violet-600';
+  const hoverClass =
+    activeColor === 'blue'
+      ? 'hover:border-blue-400 hover:text-blue-600'
+      : 'hover:border-violet-400 hover:text-violet-600';
+
+  return (
+    <div className="space-y-1.5">
+      <p className="text-xs font-semibold text-gray-500 uppercase tracking-wide">
+        {label}
+      </p>
+      <div className="flex flex-wrap gap-2">
+        {items.map((item) => {
+          const active = selected.includes(item);
+          return (
+            <button
+              key={item}
+              onClick={() => onToggle(item)}
+              className={`px-3 py-1 rounded-full text-xs font-medium border transition-colors ${
+                active
+                  ? activeClass
+                  : `bg-white text-gray-600 border-gray-300 ${hoverClass}`
+              }`}
+            >
+              {item}
+            </button>
+          );
+        })}
+      </div>
+    </div>
+  );
+}
+
 interface FilterPanelProps {
   searchText: string;
   onSearchChange: (v: string) => void;
   selectedTags: string[];
   onTagToggle: (tag: string) => void;
   availableTags: string[];
+  selectedFeatures: string[];
+  onFeatureToggle: (feature: string) => void;
+  availableFeatures: string[];
   hugoVersion: string;
   onHugoVersionChange: (v: string) => void;
   sortBy: SortOption;
@@ -21,6 +70,9 @@ export function FilterPanel({
   selectedTags,
   onTagToggle,
   availableTags,
+  selectedFeatures,
+  onFeatureToggle,
+  availableFeatures,
   hugoVersion,
   onHugoVersionChange,
   sortBy,
@@ -33,7 +85,7 @@ export function FilterPanel({
   return (
     <div className="bg-white border-b border-gray-200 sticky top-0 z-10 shadow-sm">
       <div className="max-w-7xl mx-auto px-4 py-4 space-y-4">
-        {/* Row 1: search + sort + version */}
+        {/* Row 1: search + version + sort + reset */}
         <div className="flex flex-col sm:flex-row gap-3">
           {/* Text search */}
           <div className="relative flex-1">
@@ -104,27 +156,23 @@ export function FilterPanel({
           )}
         </div>
 
-        {/* Row 2: Tag chips */}
-        {availableTags.length > 0 && (
-          <div className="flex flex-wrap gap-2">
-            {availableTags.map((tag) => {
-              const active = selectedTags.includes(tag);
-              return (
-                <button
-                  key={tag}
-                  onClick={() => onTagToggle(tag)}
-                  className={`px-3 py-1 rounded-full text-xs font-medium border transition-colors ${
-                    active
-                      ? 'bg-blue-600 text-white border-blue-600'
-                      : 'bg-white text-gray-600 border-gray-300 hover:border-blue-400 hover:text-blue-600'
-                  }`}
-                >
-                  {tag}
-                </button>
-              );
-            })}
-          </div>
-        )}
+        {/* Tags section */}
+        <ChipGroup
+          label="Tags"
+          items={availableTags}
+          selected={selectedTags}
+          onToggle={onTagToggle}
+          activeColor="blue"
+        />
+
+        {/* Features section */}
+        <ChipGroup
+          label="Features"
+          items={availableFeatures}
+          selected={selectedFeatures}
+          onToggle={onFeatureToggle}
+          activeColor="violet"
+        />
       </div>
     </div>
   );

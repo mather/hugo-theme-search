@@ -6,6 +6,7 @@ export interface Theme {
   demosite: string | null;
   license: string;
   tags: string[];
+  features: string[];
   hugo_min_version: string | null;
   thumbnail_url: string | null;
   stars: number;

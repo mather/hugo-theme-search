@@ -28,6 +28,7 @@ export interface Theme {
   demosite: string | null;
   license: string;
   tags: string[];
+  features: string[];
   hugo_min_version: string | null;
   thumbnail_url: string | null;
   stars: number;
@@ -133,17 +134,12 @@ async function processTheme(repoPath: string): Promise<Theme | null> {
 
     const thumbnailUrl = await findThumbnailUrl(owner, repo, default_branch);
 
-    const rawTags = Array.isArray(themeToml['tags'])
-      ? (themeToml['tags'] as unknown[]).map(String)
+    const tags = Array.isArray(themeToml['tags'])
+      ? [...new Set((themeToml['tags'] as unknown[]).map((t) => String(t).toLowerCase().trim()))].sort()
       : [];
-    const rawFeatures = Array.isArray(themeToml['features'])
-      ? (themeToml['features'] as unknown[]).map(String)
+    const features = Array.isArray(themeToml['features'])
+      ? [...new Set((themeToml['features'] as unknown[]).map((t) => String(t).toLowerCase().trim()))].sort()
       : [];
-    const tags = [
-      ...new Set(
-        [...rawTags, ...rawFeatures].map((t) => t.toLowerCase().trim())
-      ),
-    ].sort();
 
     return {
       id: repoPath,
@@ -153,6 +149,7 @@ async function processTheme(repoPath: string): Promise<Theme | null> {
       demosite: themeToml['demosite'] ? String(themeToml['demosite']) : null,
       license: String(themeToml['license'] ?? ''),
       tags,
+      features,
       hugo_min_version: themeToml['min_version']
         ? String(themeToml['min_version'])
         : null,

@@ -15,6 +15,7 @@ export default function App() {
 
   const [searchText, setSearchText] = useState('');
   const [selectedTags, setSelectedTags] = useState<string[]>([]);
+  const [selectedFeatures, setSelectedFeatures] = useState<string[]>([]);
   const [hugoVersion, setHugoVersion] = useState('');
   const [sortBy, setSortBy] = useState<SortOption>('stars');
   const [displayCount, setDisplayCount] = useState(PAGE_SIZE);
@@ -35,7 +36,6 @@ export default function App() {
       });
   }, []);
 
-  // All tags sorted by frequency across all themes
   const availableTags = useMemo(() => {
     if (!data) return [];
     const counts = new Map<string, number>();
@@ -46,6 +46,18 @@ export default function App() {
       .sort((a, b) => b[1] - a[1])
       .slice(0, MAX_VISIBLE_TAGS)
       .map(([tag]) => tag);
+  }, [data]);
+
+  const availableFeatures = useMemo(() => {
+    if (!data) return [];
+    const counts = new Map<string, number>();
+    data.themes.forEach((t) =>
+      t.features.forEach((f) => counts.set(f, (counts.get(f) ?? 0) + 1))
+    );
+    return Array.from(counts.entries())
+      .sort((a, b) => b[1] - a[1])
+      .slice(0, MAX_VISIBLE_TAGS)
+      .map(([f]) => f);
   }, [data]);
 
   const filteredThemes = useMemo((): Theme[] => {
@@ -67,6 +79,12 @@ export default function App() {
       );
     }
 
+    if (selectedFeatures.length > 0) {
+      result = result.filter((t) =>
+        selectedFeatures.every((f) => t.features.includes(f))
+      );
+    }
+
     const versionToCheck = hugoVersion.trim();
     if (versionToCheck && isValidVersion(versionToCheck)) {
       result = result.filter((t) =>
@@ -84,17 +102,17 @@ export default function App() {
       if (sortBy === 'name') return a.name.localeCompare(b.name);
       return 0;
     });
-  }, [data, searchText, selectedTags, hugoVersion, sortBy]);
+  }, [data, searchText, selectedTags, selectedFeatures, hugoVersion, sortBy]);
 
   // Reset display count when filters change
   useEffect(() => {
     setDisplayCount(PAGE_SIZE);
-  }, [searchText, selectedTags, hugoVersion, sortBy]);
+  }, [searchText, selectedTags, selectedFeatures, hugoVersion, sortBy]);
 
   const visibleThemes = filteredThemes.slice(0, displayCount);
   const hasMore = displayCount < filteredThemes.length;
   const hasActiveFilters =
-    searchText !== '' || selectedTags.length > 0 || hugoVersion !== '';
+    searchText !== '' || selectedTags.length > 0 || selectedFeatures.length > 0 || hugoVersion !== '';
 
   const handleTagToggle = (tag: string) => {
     setSelectedTags((prev) =>
@@ -102,9 +120,16 @@ export default function App() {
     );
   };
 
+  const handleFeatureToggle = (feature: string) => {
+    setSelectedFeatures((prev) =>
+      prev.includes(feature) ? prev.filter((f) => f !== feature) : [...prev, feature]
+    );
+  };
+
   const handleReset = () => {
     setSearchText('');
     setSelectedTags([]);
+    setSelectedFeatures([]);
     setHugoVersion('');
     setSortBy('stars');
   };
@@ -123,6 +148,9 @@ export default function App() {
         selectedTags={selectedTags}
         onTagToggle={handleTagToggle}
         availableTags={availableTags}
+        selectedFeatures={selectedFeatures}
+        onFeatureToggle={handleFeatureToggle}
+        availableFeatures={availableFeatures}
         hugoVersion={hugoVersion}
         onHugoVersionChange={setHugoVersion}
         sortBy={sortBy}
