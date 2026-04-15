@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-14T16:58:03.624Z",
+  "generated_at": "2026-04-15T04:11:20.827Z",
   "total": 547,
   "themes": [
     {
@@ -252,7 +252,7 @@
       ],
       "hugo_min_version": "0.146.0",
       "thumbnail_url": "https://raw.githubusercontent.com/imfing/hextra/main/images/tn.jpg",
-      "stars": 2102,
+      "stars": 2103,
       "last_updated": "2026-03-26T21:41:58Z"
     },
     {
@@ -312,7 +312,7 @@
       ],
       "hugo_min_version": "0.3",
       "thumbnail_url": "https://raw.githubusercontent.com/rhazdon/hugo-theme-hello-friend-ng/master/images/tn.png",
-      "stars": 1546,
+      "stars": 1547,
       "last_updated": "2025-11-18T14:27:23Z"
     },
     {
@@ -380,7 +380,7 @@
       ],
       "hugo_min_version": "v0.110.0",
       "thumbnail_url": "https://raw.githubusercontent.com/janraasch/hugo-bearblog/master/images/tn.png",
-      "stars": 1407,
+      "stars": 1406,
       "last_updated": "2026-04-09T17:32:17Z"
     },
     {
@@ -536,7 +536,7 @@
       "features": [],
       "hugo_min_version": "0.68.0",
       "thumbnail_url": "https://raw.githubusercontent.com/gurusabarish/hugo-profile/master/images/tn.png",
-      "stars": 1066,
+      "stars": 1065,
       "last_updated": "2026-02-11T05:21:47Z"
     },
     {
@@ -679,7 +679,7 @@
       ],
       "hugo_min_version": null,
       "thumbnail_url": "https://raw.githubusercontent.com/HEIGE-PCloud/DoIt/main/images/tn.png",
-      "stars": 929,
+      "stars": 930,
       "last_updated": "2026-04-12T20:47:30Z"
     },
     {
@@ -787,7 +787,7 @@
       ],
       "hugo_min_version": "0.87.0",
       "thumbnail_url": "https://raw.githubusercontent.com/hugo-sid/hugo-blog-awesome/main/images/tn.png",
-      "stars": 777,
+      "stars": 778,
       "last_updated": "2026-04-10T20:49:01Z"
     },
     {
@@ -2626,7 +2626,7 @@
       ],
       "hugo_min_version": "0.67.3 Extended",
       "thumbnail_url": "https://raw.githubusercontent.com/caressofsteel/hugo-story/master/images/tn.png",
-      "stars": 259,
+      "stars": 260,
       "last_updated": "2025-11-01T16:51:30Z"
     },
     {
@@ -3704,6 +3704,24 @@
       "last_updated": "2024-06-20T19:39:57Z"
     },
     {
+      "id": "github.com/tummychow/lanyon-hugo",
+      "name": "Lanyon",
+      "repo_url": "https://github.com/tummychow/lanyon-hugo",
+      "description": "Lanyon-Hugo is a theme designed for blogging.",
+      "demosite": null,
+      "license": "MIT",
+      "tags": [
+        "blog"
+      ],
+      "features": [
+        "blog"
+      ],
+      "hugo_min_version": "0.14",
+      "thumbnail_url": "https://raw.githubusercontent.com/tummychow/lanyon-hugo/master/images/tn.png",
+      "stars": 162,
+      "last_updated": "2021-07-06T00:21:24Z"
+    },
+    {
       "id": "github.com/1bl4z3r/hermit-V2",
       "name": "Hermit-V2",
       "repo_url": "https://github.com/1bl4z3r/hermit-V2",
@@ -3732,26 +3750,8 @@
       ],
       "hugo_min_version": null,
       "thumbnail_url": "https://raw.githubusercontent.com/1bl4z3r/hermit-V2/main/images/tn.jpg",
-      "stars": 162,
+      "stars": 161,
       "last_updated": "2026-04-05T18:48:01Z"
-    },
-    {
-      "id": "github.com/tummychow/lanyon-hugo",
-      "name": "Lanyon",
-      "repo_url": "https://github.com/tummychow/lanyon-hugo",
-      "description": "Lanyon-Hugo is a theme designed for blogging.",
-      "demosite": null,
-      "license": "MIT",
-      "tags": [
-        "blog"
-      ],
-      "features": [
-        "blog"
-      ],
-      "hugo_min_version": "0.14",
-      "thumbnail_url": "https://raw.githubusercontent.com/tummychow/lanyon-hugo/master/images/tn.png",
-      "stars": 162,
-      "last_updated": "2021-07-06T00:21:24Z"
     },
     {
       "id": "github.com/naro143/hugo-coder-portfolio",
@@ -5068,7 +5068,27 @@
       "hugo_min_version": null,
       "thumbnail_url": "https://raw.githubusercontent.com/chrede88/qubt/main/images/tn.png",
       "stars": 97,
-      "last_updated": "2026-04-10T19:35:43Z"
+      "last_updated": "2026-04-15T01:01:14Z"
+    },
+    {
+      "id": "github.com/escalate/hugo-split-theme",
+      "name": "Split",
+      "repo_url": "https://github.com/escalate/hugo-split-theme",
+      "description": "Split is a centrally-divided layout for a professional online presence with a big image or video left with alongside content.",
+      "demosite": null,
+      "license": "Creative Commons Attribution 3.0 Unported",
+      "tags": [
+        "minimal",
+        "one page",
+        "onepage",
+        "personal",
+        "responsive"
+      ],
+      "features": [],
+      "hugo_min_version": "0.120",
+      "thumbnail_url": "https://raw.githubusercontent.com/escalate/hugo-split-theme/master/images/tn.png",
+      "stars": 95,
+      "last_updated": "2025-08-22T19:16:59Z"
     },
     {
       "id": "github.com/maolonglong/hugo-simple",
@@ -5141,26 +5161,6 @@
       "thumbnail_url": "https://raw.githubusercontent.com/aerohub/hugo-identity-theme/master/images/tn.png",
       "stars": 94,
       "last_updated": "2023-08-14T11:36:07Z"
-    },
-    {
-      "id": "github.com/escalate/hugo-split-theme",
-      "name": "Split",
-      "repo_url": "https://github.com/escalate/hugo-split-theme",
-      "description": "Split is a centrally-divided layout for a professional online presence with a big image or video left with alongside content.",
-      "demosite": null,
-      "license": "Creative Commons Attribution 3.0 Unported",
-      "tags": [
-        "minimal",
-        "one page",
-        "onepage",
-        "personal",
-        "responsive"
-      ],
-      "features": [],
-      "hugo_min_version": "0.120",
-      "thumbnail_url": "https://raw.githubusercontent.com/escalate/hugo-split-theme/master/images/tn.png",
-      "stars": 94,
-      "last_updated": "2025-08-22T19:16:59Z"
     },
     {
       "id": "github.com/prxshetty/hugo-noir",
@@ -5918,7 +5918,7 @@
       ],
       "hugo_min_version": "0.41.0",
       "thumbnail_url": "https://raw.githubusercontent.com/serkodev/holy/master/images/tn.png",
-      "stars": 76,
+      "stars": 77,
       "last_updated": "2024-05-09T03:28:27Z"
     },
     {
@@ -8614,7 +8614,7 @@
       "hugo_min_version": null,
       "thumbnail_url": "https://raw.githubusercontent.com/chrede88/L1nkr/main/images/tn.png",
       "stars": 36,
-      "last_updated": "2026-04-13T20:12:13Z"
+      "last_updated": "2026-04-15T01:00:44Z"
     },
     {
       "id": "github.com/hbstack/theme-start",
@@ -12170,6 +12170,35 @@
       "last_updated": "2024-11-15T15:59:08Z"
     },
     {
+      "id": "github.com/carlosplanchon/hugo-theme-swiss-operator",
+      "name": "Swiss Operator",
+      "repo_url": "https://github.com/carlosplanchon/hugo-theme-swiss-operator",
+      "description": "A minimalist, typography-focused Hugo theme with Swiss design",
+      "demosite": "https://carlosplanchon.com",
+      "license": "MIT",
+      "tags": [
+        "blog",
+        "clean",
+        "dark-mode",
+        "minimal",
+        "responsive",
+        "swiss-design",
+        "typography"
+      ],
+      "features": [
+        "customizable-colors",
+        "light/dark",
+        "multi-language",
+        "responsive",
+        "rss",
+        "social-links"
+      ],
+      "hugo_min_version": "0.120.0",
+      "thumbnail_url": "https://raw.githubusercontent.com/carlosplanchon/hugo-theme-swiss-operator/main/images/tn.png",
+      "stars": 9,
+      "last_updated": "2026-03-04T05:12:05Z"
+    },
+    {
       "id": "github.com/desmondlzy/bloggraph",
       "name": "Bloggraph",
       "repo_url": "https://github.com/desmondlzy/bloggraph",
@@ -12283,35 +12312,6 @@
       "thumbnail_url": "https://raw.githubusercontent.com/yassi/hugo-theme-yassi/main/images/tn.png",
       "stars": 9,
       "last_updated": "2026-04-11T18:19:54Z"
-    },
-    {
-      "id": "github.com/carlosplanchon/hugo-theme-swiss-operator",
-      "name": "Swiss Operator",
-      "repo_url": "https://github.com/carlosplanchon/hugo-theme-swiss-operator",
-      "description": "A minimalist, typography-focused Hugo theme with Swiss design",
-      "demosite": "https://carlosplanchon.com",
-      "license": "MIT",
-      "tags": [
-        "blog",
-        "clean",
-        "dark-mode",
-        "minimal",
-        "responsive",
-        "swiss-design",
-        "typography"
-      ],
-      "features": [
-        "customizable-colors",
-        "light/dark",
-        "multi-language",
-        "responsive",
-        "rss",
-        "social-links"
-      ],
-      "hugo_min_version": "0.120.0",
-      "thumbnail_url": "https://raw.githubusercontent.com/carlosplanchon/hugo-theme-swiss-operator/main/images/tn.png",
-      "stars": 8,
-      "last_updated": "2026-03-04T05:12:05Z"
     },
     {
       "id": "github.com/edavidaja/docter",
