@@ -108,12 +108,23 @@ async function findThumbnailUrl(
   return null;
 }
 
-async function processTheme(repoPath: string): Promise<Theme | null> {
+function parseRepoPath(repoPath: string): { owner: string; repo: string } | null {
   const withoutHost = repoPath.replace('github.com/', '');
-  const slashIdx = withoutHost.indexOf('/');
+  // Remove Go module major version suffix (e.g., /v2, /v3)
+  // See: https://go.dev/ref/mod#major-version-suffixes
+  const normalized = withoutHost.replace(/\/v\d+$/, '');
+  const slashIdx = normalized.indexOf('/');
   if (slashIdx === -1) return null;
-  const owner = withoutHost.slice(0, slashIdx);
-  const repo = withoutHost.slice(slashIdx + 1);
+  return {
+    owner: normalized.slice(0, slashIdx),
+    repo: normalized.slice(slashIdx + 1),
+  };
+}
+
+async function processTheme(repoPath: string): Promise<Theme | null> {
+  const parsed = parseRepoPath(repoPath);
+  if (!parsed) return null;
+  const { owner, repo } = parsed;
 
   try {
     const { stars, last_updated, default_branch } = await fetchRepoMeta(
