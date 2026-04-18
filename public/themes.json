@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-17T04:14:45.779Z",
+  "generated_at": "2026-04-18T03:50:52.219Z",
   "total": 562,
   "themes": [
     {
@@ -58,7 +58,7 @@
       ],
       "hugo_min_version": "0.146.0",
       "thumbnail_url": "https://raw.githubusercontent.com/adityatelange/hugo-PaperMod/master/images/tn.png",
-      "stars": 13368,
+      "stars": 13374,
       "last_updated": "2026-04-11T19:02:57Z"
     },
     {
@@ -87,7 +87,7 @@
       ],
       "hugo_min_version": "0.157.0",
       "thumbnail_url": "https://raw.githubusercontent.com/CaiJimmy/hugo-theme-stack/master/images/tn.png",
-      "stars": 6335,
+      "stars": 6336,
       "last_updated": "2026-03-21T11:01:54Z"
     },
     {
@@ -139,7 +139,7 @@
       ],
       "hugo_min_version": "0.128.0",
       "thumbnail_url": "https://raw.githubusercontent.com/dillonzq/LoveIt/master/images/tn.png",
-      "stars": 3835,
+      "stars": 3836,
       "last_updated": "2026-03-11T11:50:37Z"
     },
     {
@@ -191,8 +191,40 @@
       "features": [],
       "hugo_min_version": "0.146.0",
       "thumbnail_url": "https://raw.githubusercontent.com/google/docsy/main/images/tn.png",
-      "stars": 2925,
+      "stars": 2926,
       "last_updated": "2026-04-08T23:26:12Z"
+    },
+    {
+      "id": "github.com/panr/hugo-theme-terminal/v4",
+      "name": "Terminal",
+      "repo_url": "https://github.com/panr/hugo-theme-terminal",
+      "description": "A simple, retro theme for Hugo.",
+      "demosite": "https://panr.github.io/hugo-theme-terminal-demo/",
+      "license": "MIT",
+      "tags": [
+        "blog",
+        "clean",
+        "customizable",
+        "dark",
+        "highlighting",
+        "minimal",
+        "monotone",
+        "multilingual",
+        "personal",
+        "responsive",
+        "retro",
+        "simple",
+        "technical"
+      ],
+      "features": [
+        "blog",
+        "shortcode",
+        "syntax highlighting"
+      ],
+      "hugo_min_version": "0.9",
+      "thumbnail_url": "https://raw.githubusercontent.com/panr/hugo-theme-terminal/master/images/tn.png",
+      "stars": 2718,
+      "last_updated": "2026-04-05T21:21:42Z"
     },
     {
       "id": "github.com/nunocoracao/blowfish/v2",
@@ -224,38 +256,6 @@
       "last_updated": "2026-04-15T05:17:57Z"
     },
     {
-      "id": "github.com/panr/hugo-theme-terminal/v4",
-      "name": "Terminal",
-      "repo_url": "https://github.com/panr/hugo-theme-terminal",
-      "description": "A simple, retro theme for Hugo.",
-      "demosite": "https://panr.github.io/hugo-theme-terminal-demo/",
-      "license": "MIT",
-      "tags": [
-        "blog",
-        "clean",
-        "customizable",
-        "dark",
-        "highlighting",
-        "minimal",
-        "monotone",
-        "multilingual",
-        "personal",
-        "responsive",
-        "retro",
-        "simple",
-        "technical"
-      ],
-      "features": [
-        "blog",
-        "shortcode",
-        "syntax highlighting"
-      ],
-      "hugo_min_version": "0.9",
-      "thumbnail_url": "https://raw.githubusercontent.com/panr/hugo-theme-terminal/master/images/tn.png",
-      "stars": 2714,
-      "last_updated": "2026-04-05T21:21:42Z"
-    },
-    {
       "id": "github.com/nanxiaobei/hugo-paper",
       "name": "Paper",
       "repo_url": "https://github.com/nanxiaobei/hugo-paper",
@@ -277,7 +277,7 @@
       ],
       "hugo_min_version": "0.57.1",
       "thumbnail_url": "https://raw.githubusercontent.com/nanxiaobei/hugo-paper/main/images/tn.png",
-      "stars": 2387,
+      "stars": 2386,
       "last_updated": "2026-03-09T08:46:19Z"
     },
     {
@@ -308,7 +308,7 @@
       ],
       "hugo_min_version": null,
       "thumbnail_url": "https://raw.githubusercontent.com/gethyas/doks/main/images/tn.png",
-      "stars": 2345,
+      "stars": 2346,
       "last_updated": "2026-04-06T22:31:41Z"
     },
     {
@@ -342,8 +342,8 @@
       ],
       "hugo_min_version": "0.146.0",
       "thumbnail_url": "https://raw.githubusercontent.com/imfing/hextra/main/images/tn.jpg",
-      "stars": 2105,
-      "last_updated": "2026-04-16T20:15:35Z"
+      "stars": 2107,
+      "last_updated": "2026-04-17T22:29:30Z"
     },
     {
       "id": "github.com/olOwOlo/hugo-theme-even",
@@ -370,7 +370,7 @@
       ],
       "hugo_min_version": "0.60.0",
       "thumbnail_url": "https://raw.githubusercontent.com/olOwOlo/hugo-theme-even/master/images/tn.png",
-      "stars": 2093,
+      "stars": 2092,
       "last_updated": "2024-12-02T13:37:53Z"
     },
     {
@@ -497,7 +497,7 @@
       ],
       "hugo_min_version": "v0.110.0",
       "thumbnail_url": "https://raw.githubusercontent.com/janraasch/hugo-bearblog/master/images/tn.png",
-      "stars": 1406,
+      "stars": 1407,
       "last_updated": "2026-04-16T20:45:59Z"
     },
     {
@@ -526,7 +526,7 @@
       ],
       "hugo_min_version": "0.41",
       "thumbnail_url": "https://raw.githubusercontent.com/athul/archie/master/images/tn.png",
-      "stars": 1383,
+      "stars": 1384,
       "last_updated": "2026-03-30T11:45:47Z"
     },
     {
@@ -554,7 +554,7 @@
       "hugo_min_version": "0.160.0",
       "thumbnail_url": "https://raw.githubusercontent.com/theNewDynamic/gohugo-theme-ananke/main/images/tn.png",
       "stars": 1367,
-      "last_updated": "2026-04-17T04:00:51Z"
+      "last_updated": "2026-04-18T02:54:03Z"
     },
     {
       "id": "github.com/hugo-toha/toha/v4",
@@ -889,7 +889,7 @@
       ],
       "hugo_min_version": "0.15",
       "thumbnail_url": "https://raw.githubusercontent.com/devcows/hugo-universal-theme/master/images/tn.png",
-      "stars": 916,
+      "stars": 917,
       "last_updated": "2026-03-16T15:55:57Z"
     },
     {
@@ -1220,8 +1220,8 @@
       ],
       "hugo_min_version": "0.140.0",
       "thumbnail_url": "https://raw.githubusercontent.com/colinwilson/lotusdocs/release/images/tn.png",
-      "stars": 666,
-      "last_updated": "2026-04-17T02:36:10Z"
+      "stars": 667,
+      "last_updated": "2026-04-17T21:31:14Z"
     },
     {
       "id": "github.com/AmazingRise/hugo-theme-diary",
@@ -1274,7 +1274,7 @@
       ],
       "hugo_min_version": "0.90.0",
       "thumbnail_url": "https://raw.githubusercontent.com/mrmierzejewski/hugo-theme-console/master/images/tn.png",
-      "stars": 652,
+      "stars": 653,
       "last_updated": "2025-11-11T14:48:40Z"
     },
     {
@@ -1612,7 +1612,7 @@
       "features": [],
       "hugo_min_version": "0.156",
       "thumbnail_url": "https://raw.githubusercontent.com/thegeeklab/hugo-geekdoc/main/images/tn.png",
-      "stars": 540,
+      "stars": 541,
       "last_updated": "2026-04-13T07:21:55Z"
     },
     {
@@ -1907,7 +1907,7 @@
       ],
       "hugo_min_version": "0.148.2buil",
       "thumbnail_url": "https://raw.githubusercontent.com/nusserstudios/tailbliss/main/images/tn.jpg",
-      "stars": 403,
+      "stars": 404,
       "last_updated": "2026-04-15T18:50:42Z"
     },
     {
@@ -1972,7 +1972,7 @@
       ],
       "hugo_min_version": null,
       "thumbnail_url": "https://raw.githubusercontent.com/zerostaticthemes/hugo-hero-theme/master/images/tn.png",
-      "stars": 394,
+      "stars": 395,
       "last_updated": "2024-11-01T23:56:56Z"
     },
     {
@@ -2464,7 +2464,7 @@
       ],
       "hugo_min_version": null,
       "thumbnail_url": "https://raw.githubusercontent.com/willfaught/paige/master/images/tn.jpg",
-      "stars": 314,
+      "stars": 315,
       "last_updated": "2026-02-19T03:13:28Z"
     },
     {
@@ -2753,7 +2753,7 @@
       ],
       "hugo_min_version": "0.121.1",
       "thumbnail_url": "https://raw.githubusercontent.com/apvarun/digital-garden-hugo-theme/main/images/tn.png",
-      "stars": 295,
+      "stars": 296,
       "last_updated": "2026-04-13T07:51:07Z"
     },
     {
@@ -3041,7 +3041,7 @@
       ],
       "hugo_min_version": null,
       "thumbnail_url": "https://raw.githubusercontent.com/schnerring/hugo-theme-gruvbox/main/images/tn.png",
-      "stars": 249,
+      "stars": 250,
       "last_updated": "2026-04-15T16:41:22Z"
     },
     {
@@ -3361,7 +3361,7 @@
       "hugo_min_version": "0.153.0",
       "thumbnail_url": "https://raw.githubusercontent.com/zetxek/adritian-free-hugo-theme/main/images/tn.png",
       "stars": 214,
-      "last_updated": "2026-04-16T04:44:15Z"
+      "last_updated": "2026-04-17T13:47:13Z"
     },
     {
       "id": "github.com/hadisinaee/avicenna",
@@ -3709,7 +3709,7 @@
       "hugo_min_version": "0.146.0",
       "thumbnail_url": "https://raw.githubusercontent.com/gethinode/hinode/main/images/tn.png",
       "stars": 187,
-      "last_updated": "2026-04-15T14:01:35Z"
+      "last_updated": "2026-04-17T06:56:50Z"
     },
     {
       "id": "github.com/matsuyoshi30/harbor",
@@ -4658,7 +4658,7 @@
       "hugo_min_version": "0.141.0",
       "thumbnail_url": "https://raw.githubusercontent.com/foxihd/hugo-brewm/main/images/tn.png",
       "stars": 123,
-      "last_updated": "2026-04-03T04:01:38Z"
+      "last_updated": "2026-04-17T14:51:26Z"
     },
     {
       "id": "github.com/jrutheiser/hugo-lithium-theme",
@@ -5884,7 +5884,7 @@
       "hugo_min_version": "0.84.0",
       "thumbnail_url": "https://raw.githubusercontent.com/kaushikgopal/henry-hugo/master/images/tn.png",
       "stars": 88,
-      "last_updated": "2026-04-15T18:43:34Z"
+      "last_updated": "2026-04-18T00:51:07Z"
     },
     {
       "id": "github.com/uicardiodev/hugo-uilite",
@@ -6400,41 +6400,6 @@
       "last_updated": "2026-04-15T17:13:07Z"
     },
     {
-      "id": "github.com/peaceiris/hugo-theme-iris",
-      "name": "Iris",
-      "repo_url": "https://github.com/peaceiris/hugo-theme-iris",
-      "description": "Hugo Iris Theme - Portfolio and Blog",
-      "demosite": "https://hugothemeiris.peaceiris.com/",
-      "license": "MIT",
-      "tags": [
-        "blog",
-        "bulma",
-        "dark",
-        "disqus",
-        "fast",
-        "flexbox",
-        "google-analytics",
-        "mobile",
-        "multilingual",
-        "netlify",
-        "personal",
-        "portfolio",
-        "presentation",
-        "responsive",
-        "slide",
-        "syntax-highlighting"
-      ],
-      "features": [
-        "mathjax",
-        "mermaid",
-        "reveal.js"
-      ],
-      "hugo_min_version": "0.110.0",
-      "thumbnail_url": "https://raw.githubusercontent.com/peaceiris/hugo-theme-iris/main/images/tn.png",
-      "stars": 74,
-      "last_updated": "2026-04-15T11:40:50Z"
-    },
-    {
       "id": "github.com/rokcso/hugo-bearneo",
       "name": "Hugo Bear Neo",
       "repo_url": "https://github.com/rokcso/hugo-bearneo",
@@ -6470,8 +6435,43 @@
       ],
       "hugo_min_version": null,
       "thumbnail_url": "https://raw.githubusercontent.com/rokcso/hugo-bearneo/main/images/tn.png",
-      "stars": 74,
+      "stars": 75,
       "last_updated": "2025-11-03T11:03:36Z"
+    },
+    {
+      "id": "github.com/peaceiris/hugo-theme-iris",
+      "name": "Iris",
+      "repo_url": "https://github.com/peaceiris/hugo-theme-iris",
+      "description": "Hugo Iris Theme - Portfolio and Blog",
+      "demosite": "https://hugothemeiris.peaceiris.com/",
+      "license": "MIT",
+      "tags": [
+        "blog",
+        "bulma",
+        "dark",
+        "disqus",
+        "fast",
+        "flexbox",
+        "google-analytics",
+        "mobile",
+        "multilingual",
+        "netlify",
+        "personal",
+        "portfolio",
+        "presentation",
+        "responsive",
+        "slide",
+        "syntax-highlighting"
+      ],
+      "features": [
+        "mathjax",
+        "mermaid",
+        "reveal.js"
+      ],
+      "hugo_min_version": "0.110.0",
+      "thumbnail_url": "https://raw.githubusercontent.com/peaceiris/hugo-theme-iris/main/images/tn.png",
+      "stars": 74,
+      "last_updated": "2026-04-15T11:40:50Z"
     },
     {
       "id": "github.com/seanlane/gochowdown",
@@ -6519,6 +6519,29 @@
       "thumbnail_url": "https://raw.githubusercontent.com/fncnt/vncnt-hugo/master/images/tn.png",
       "stars": 73,
       "last_updated": "2024-04-22T19:13:21Z"
+    },
+    {
+      "id": "github.com/roninro/hugo-theme-puppet",
+      "name": "Puppet",
+      "repo_url": "https://github.com/roninro/hugo-theme-puppet",
+      "description": "a simple and clean theme for Hugo",
+      "demosite": "https://hugo-theme-puppet.netlify.app/",
+      "license": "Apache",
+      "tags": [
+        "blog",
+        "light",
+        "responsive"
+      ],
+      "features": [
+        "comments",
+        "responsive",
+        "search",
+        "sidebar"
+      ],
+      "hugo_min_version": "0.101.0",
+      "thumbnail_url": "https://raw.githubusercontent.com/roninro/hugo-theme-puppet/master/images/tn.png",
+      "stars": 73,
+      "last_updated": "2024-05-16T21:34:01Z"
     },
     {
       "id": "github.com/it-gro/hugo-theme-w3css-basic",
@@ -6636,29 +6659,6 @@
       "thumbnail_url": "https://raw.githubusercontent.com/orf/bare-hugo-theme/master/images/tn.png",
       "stars": 72,
       "last_updated": "2023-07-01T22:36:49Z"
-    },
-    {
-      "id": "github.com/roninro/hugo-theme-puppet",
-      "name": "Puppet",
-      "repo_url": "https://github.com/roninro/hugo-theme-puppet",
-      "description": "a simple and clean theme for Hugo",
-      "demosite": "https://hugo-theme-puppet.netlify.app/",
-      "license": "Apache",
-      "tags": [
-        "blog",
-        "light",
-        "responsive"
-      ],
-      "features": [
-        "comments",
-        "responsive",
-        "search",
-        "sidebar"
-      ],
-      "hugo_min_version": "0.101.0",
-      "thumbnail_url": "https://raw.githubusercontent.com/roninro/hugo-theme-puppet/master/images/tn.png",
-      "stars": 72,
-      "last_updated": "2024-05-16T21:34:01Z"
     },
     {
       "id": "github.com/alexandrevicenzi/soho",
@@ -8745,6 +8745,32 @@
       "last_updated": "2021-10-28T09:48:32Z"
     },
     {
+      "id": "github.com/danapixels/digio-theme",
+      "name": "digio",
+      "repo_url": "https://github.com/danapixels/digio-theme",
+      "description": "A pixel, ASCII, and retro Hugo theme.",
+      "demosite": "https://danablog.dev",
+      "license": "GPL 3.0",
+      "tags": [
+        "black",
+        "blog",
+        "minimal",
+        "personal",
+        "pixel",
+        "retro",
+        "simple"
+      ],
+      "features": [
+        "external-links-treated-as-posts",
+        "post-icons",
+        "scrolling-table-of-contents"
+      ],
+      "hugo_min_version": null,
+      "thumbnail_url": "https://raw.githubusercontent.com/danapixels/digio-theme/main/images/tn.png",
+      "stars": 39,
+      "last_updated": "2026-03-04T05:17:39Z"
+    },
+    {
       "id": "github.com/dchucks/agnes-hugo-theme",
       "name": "Agnes",
       "repo_url": "https://github.com/dchucks/agnes-hugo-theme",
@@ -8867,32 +8893,6 @@
       "thumbnail_url": "https://raw.githubusercontent.com/bowman2001/perplex/main/images/tn.jpg",
       "stars": 38,
       "last_updated": "2024-08-13T19:21:39Z"
-    },
-    {
-      "id": "github.com/danapixels/digio-theme",
-      "name": "digio",
-      "repo_url": "https://github.com/danapixels/digio-theme",
-      "description": "A pixel, ASCII, and retro Hugo theme.",
-      "demosite": "https://danablog.dev",
-      "license": "GPL 3.0",
-      "tags": [
-        "black",
-        "blog",
-        "minimal",
-        "personal",
-        "pixel",
-        "retro",
-        "simple"
-      ],
-      "features": [
-        "external-links-treated-as-posts",
-        "post-icons",
-        "scrolling-table-of-contents"
-      ],
-      "hugo_min_version": null,
-      "thumbnail_url": "https://raw.githubusercontent.com/danapixels/digio-theme/main/images/tn.png",
-      "stars": 38,
-      "last_updated": "2026-03-04T05:17:39Z"
     },
     {
       "id": "github.com/uicardiodev/hugo-sodium-theme",
@@ -9136,6 +9136,29 @@
       "last_updated": "2024-06-11T08:11:57Z"
     },
     {
+      "id": "github.com/tylerjlawson/port-hugo",
+      "name": "Port Hugo",
+      "repo_url": "https://github.com/tylerjlawson/port-hugo",
+      "description": "Web Developer Portfolio",
+      "demosite": "https://compassionate-kepler-de5af1.netlify.app/",
+      "license": "MIT",
+      "tags": [
+        "bootstrap",
+        "font-awesome",
+        "personal",
+        "portfolio",
+        "simple"
+      ],
+      "features": [
+        "bootstrap",
+        "responsive"
+      ],
+      "hugo_min_version": "0.60.0",
+      "thumbnail_url": "https://raw.githubusercontent.com/tylerjlawson/port-hugo/main/images/tn.png",
+      "stars": 36,
+      "last_updated": "2025-11-14T04:34:48Z"
+    },
+    {
       "id": "github.com/IvanChou/hugo-theme-vec",
       "name": "Vec",
       "repo_url": "https://github.com/IvanChou/hugo-theme-vec",
@@ -9214,29 +9237,6 @@
       "thumbnail_url": "https://raw.githubusercontent.com/pacollins/calligraphy/main/images/tn.png",
       "stars": 35,
       "last_updated": "2024-09-26T02:06:55Z"
-    },
-    {
-      "id": "github.com/tylerjlawson/port-hugo",
-      "name": "Port Hugo",
-      "repo_url": "https://github.com/tylerjlawson/port-hugo",
-      "description": "Web Developer Portfolio",
-      "demosite": "https://compassionate-kepler-de5af1.netlify.app/",
-      "license": "MIT",
-      "tags": [
-        "bootstrap",
-        "font-awesome",
-        "personal",
-        "portfolio",
-        "simple"
-      ],
-      "features": [
-        "bootstrap",
-        "responsive"
-      ],
-      "hugo_min_version": "0.60.0",
-      "thumbnail_url": "https://raw.githubusercontent.com/tylerjlawson/port-hugo/main/images/tn.png",
-      "stars": 35,
-      "last_updated": "2025-11-14T04:34:48Z"
     },
     {
       "id": "github.com/mansoorbarri/roadster",
@@ -10896,6 +10896,35 @@
       "last_updated": "2018-07-04T20:49:41Z"
     },
     {
+      "id": "github.com/Daucloud/hugo-theme-void",
+      "name": "Void",
+      "repo_url": "https://github.com/Daucloud/hugo-theme-void",
+      "description": "A clean, modern Hugo blog theme built with Tailwind CSS",
+      "demosite": "https://www.daucloud.com",
+      "license": "MIT",
+      "tags": [
+        "blog",
+        "light",
+        "minimal",
+        "personal",
+        "responsive",
+        "tailwind"
+      ],
+      "features": [
+        "blog",
+        "clean design",
+        "code highlighting",
+        "light mode",
+        "responsive",
+        "social icons",
+        "tailwind css"
+      ],
+      "hugo_min_version": null,
+      "thumbnail_url": "https://raw.githubusercontent.com/Daucloud/hugo-theme-void/main/images/tn.png",
+      "stars": 19,
+      "last_updated": "2026-04-08T02:56:38Z"
+    },
+    {
       "id": "github.com/iCyris/hugo-theme-yuki",
       "name": "Yuki",
       "repo_url": "https://github.com/iCyris/hugo-theme-yuki",
@@ -11258,35 +11287,6 @@
       "thumbnail_url": "https://raw.githubusercontent.com/d-kusk/minimage/master/images/tn.png",
       "stars": 18,
       "last_updated": "2023-09-08T22:42:24Z"
-    },
-    {
-      "id": "github.com/Daucloud/hugo-theme-void",
-      "name": "Void",
-      "repo_url": "https://github.com/Daucloud/hugo-theme-void",
-      "description": "A clean, modern Hugo blog theme built with Tailwind CSS",
-      "demosite": "https://www.daucloud.com",
-      "license": "MIT",
-      "tags": [
-        "blog",
-        "light",
-        "minimal",
-        "personal",
-        "responsive",
-        "tailwind"
-      ],
-      "features": [
-        "blog",
-        "clean design",
-        "code highlighting",
-        "light mode",
-        "responsive",
-        "social icons",
-        "tailwind css"
-      ],
-      "hugo_min_version": null,
-      "thumbnail_url": "https://raw.githubusercontent.com/Daucloud/hugo-theme-void/main/images/tn.png",
-      "stars": 18,
-      "last_updated": "2026-04-08T02:56:38Z"
     },
     {
       "id": "github.com/dldx/hpstr-hugo-theme",
@@ -14518,7 +14518,7 @@
       "hugo_min_version": "0.158.0",
       "thumbnail_url": "https://raw.githubusercontent.com/anantshri/hugo-techie-personal/main/images/tn.png",
       "stars": 1,
-      "last_updated": "2026-04-15T23:57:43Z"
+      "last_updated": "2026-04-17T20:30:47Z"
     },
     {
       "id": "github.com/cyevgeniy/monday-theme",
@@ -14975,7 +14975,7 @@
       "hugo_min_version": "0.41.0",
       "thumbnail_url": "https://raw.githubusercontent.com/foxihd/hugo-foxx/main/images/tn.png",
       "stars": 0,
-      "last_updated": "2026-04-09T12:01:29Z"
+      "last_updated": "2026-04-17T14:44:01Z"
     },
     {
       "id": "github.com/geschke/hugo-felmdrav",
