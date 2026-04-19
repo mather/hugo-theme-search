@@ -27,6 +27,7 @@ jobs:
         run: npm run fetch-themes
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITLAB_TOKEN: ${{ secrets.GITLAB_TOKEN }}
 
       - name: Upload themes.json to R2
         env:

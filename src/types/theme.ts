@@ -1,5 +1,8 @@
+export type Host = 'github' | 'codeberg' | 'gitlab';
+
 export interface Theme {
   id: string;
+  host: Host;
   name: string;
   repo_url: string;
   description: string;
