@@ -7,9 +7,10 @@ interface ChipGroupProps {
   selected: string[];
   onToggle: (item: string) => void;
   activeColor: 'blue' | 'violet';
+  counts: Map<string, number>;
 }
 
-function ChipGroup({ label, items, selected, onToggle, activeColor }: ChipGroupProps) {
+function ChipGroup({ label, items, selected, onToggle, activeColor, counts }: ChipGroupProps) {
   if (items.length === 0) return null;
   const activeClass =
     activeColor === 'blue'
@@ -28,6 +29,7 @@ function ChipGroup({ label, items, selected, onToggle, activeColor }: ChipGroupP
       <div className="flex flex-wrap gap-2">
         {items.map((item) => {
           const active = selected.includes(item);
+          const count = counts.get(item) ?? 0;
           return (
             <button
               key={item}
@@ -39,6 +41,9 @@ function ChipGroup({ label, items, selected, onToggle, activeColor }: ChipGroupP
               }`}
             >
               {item}
+              <span className={`ml-1 ${active ? 'opacity-80' : 'opacity-50'}`}>
+                ({count})
+              </span>
             </button>
           );
         })}
@@ -53,9 +58,11 @@ interface FilterPanelProps {
   selectedTags: string[];
   onTagToggle: (tag: string) => void;
   availableTags: string[];
+  tagCounts: Map<string, number>;
   selectedFeatures: string[];
   onFeatureToggle: (feature: string) => void;
   availableFeatures: string[];
+  featureCounts: Map<string, number>;
   hugoVersion: string;
   onHugoVersionChange: (v: string) => void;
   sortBy: SortOption;
@@ -70,9 +77,11 @@ export function FilterPanel({
   selectedTags,
   onTagToggle,
   availableTags,
+  tagCounts,
   selectedFeatures,
   onFeatureToggle,
   availableFeatures,
+  featureCounts,
   hugoVersion,
   onHugoVersionChange,
   sortBy,
@@ -163,6 +172,7 @@ export function FilterPanel({
           selected={selectedTags}
           onToggle={onTagToggle}
           activeColor="blue"
+          counts={tagCounts}
         />
 
         {/* Features section */}
@@ -172,6 +182,7 @@ export function FilterPanel({
           selected={selectedFeatures}
           onToggle={onFeatureToggle}
           activeColor="violet"
+          counts={featureCounts}
         />
       </div>
     </div>

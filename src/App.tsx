@@ -104,6 +104,22 @@ export default function App() {
     });
   }, [data, searchText, selectedTags, selectedFeatures, hugoVersion, sortBy]);
 
+  const tagCounts = useMemo(() => {
+    const counts = new Map<string, number>();
+    filteredThemes.forEach((t) =>
+      t.tags.forEach((tag) => counts.set(tag, (counts.get(tag) ?? 0) + 1))
+    );
+    return counts;
+  }, [filteredThemes]);
+
+  const featureCounts = useMemo(() => {
+    const counts = new Map<string, number>();
+    filteredThemes.forEach((t) =>
+      t.features.forEach((f) => counts.set(f, (counts.get(f) ?? 0) + 1))
+    );
+    return counts;
+  }, [filteredThemes]);
+
   // Reset display count when filters change
   useEffect(() => {
     setDisplayCount(PAGE_SIZE);
@@ -148,9 +164,11 @@ export default function App() {
         selectedTags={selectedTags}
         onTagToggle={handleTagToggle}
         availableTags={availableTags}
+        tagCounts={tagCounts}
         selectedFeatures={selectedFeatures}
         onFeatureToggle={handleFeatureToggle}
         availableFeatures={availableFeatures}
+        featureCounts={featureCounts}
         hugoVersion={hugoVersion}
         onHugoVersionChange={setHugoVersion}
         sortBy={sortBy}
