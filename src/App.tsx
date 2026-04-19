@@ -21,7 +21,7 @@ export default function App() {
   const [displayCount, setDisplayCount] = useState(PAGE_SIZE);
 
   useEffect(() => {
-    fetch(`${import.meta.env.BASE_URL}themes.json`)
+    fetch(import.meta.env.VITE_THEMES_URL ?? `${import.meta.env.BASE_URL}themes.json`)
       .then((res) => {
         if (!res.ok) throw new Error(`HTTP ${res.status}`);
         return res.json() as Promise<ThemesData>;
